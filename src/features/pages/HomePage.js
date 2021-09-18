@@ -5,6 +5,7 @@ import Probabilities from '../components/bits/table/Probabilities';
 // Input datasets
 import trainingSet from "../../app/ml/trainingSet.json"
 import Records from '../components/bits/table/Records';
+import LineChart from '../components/bits/charts/LineChart';
 
 function HomePage() {
     const [loading, setLoading] = useState(false);;
@@ -24,7 +25,7 @@ function HomePage() {
             console.log('Data from processDataAsycn() with async( When promise gets resolved ): ' + data);
             setLoading(false)
             setTaskCompleted(true)
-            setModel(data.model)
+            setModel(data.model[0])
             setSelectedProbability(data.selectedProbability)
             console.log("MODEL: ", data.model)
             console.log("SELECTED PROBAILITY: ", data.selectedProbability)
@@ -98,23 +99,20 @@ function HomePage() {
                     <Grid item xs={12} md={8}>
                         <Card>
                             <CardContent>
-                                <Box p={3} justifyContent="center" textAlign="center">
-                                    <Typography variant="h2" gutterBottom color="error">
-                                        Etiqueta {selectedProbability}
-                                    </Typography>
-                                    <Typography variant="h4" gutterBottom>
-                                        Modelo
-                                    </Typography>
-                                    <Probabilities
-                                        model={model}
-                                        selectedProbability={selectedProbability} />
-                                </Box>
+
+                                <Probabilities
+                                    model={model}
+                                    selectedProbability={selectedProbability} />
+                                <LineChart
+                                    model={model}
+                                    selectedProbability={selectedProbability} />
                             </CardContent>
                         </Card>
                     </Grid>
                     :
                     <></>
                 }
+
             </Grid>
         </div>
     )

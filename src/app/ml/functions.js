@@ -43,17 +43,17 @@ export const ConvolutionalNeuralNetwork = () => new Promise((resolve, reject) =>
      * */
     const outputData = tf.tensor2d(
         trainingSet.map(item => [
-            item.tag === "5" ? 1 : 0,
-            item.tag === "4" ? 1 : 0,
-            item.tag === "3" ? 1 : 0,
-            item.tag === "2" ? 1 : 0,
-            item.tag === "1" ? 1 : 0,
-            item.tag === "0" ? 1 : 0,
-            item.tag === "-1" ? 1 : 0,
-            item.tag === "-2" ? 1 : 0,
-            item.tag === "-3" ? 1 : 0,
+            item.tag === "-5" ? 1 : 0,
             item.tag === "-4" ? 1 : 0,
-            item.tag === "-5" ? 1 : 0
+            item.tag === "-3" ? 1 : 0,
+            item.tag === "-2" ? 1 : 0,
+            item.tag === "-1" ? 1 : 0,
+            item.tag === "0" ? 1 : 0,
+            item.tag === "1" ? 1 : 0,
+            item.tag === "2" ? 1 : 0,
+            item.tag === "3" ? 1 : 0,
+            item.tag === "4" ? 1 : 0,
+            item.tag === "5" ? 1 : 0
         ]))
 
     /**

@@ -3,7 +3,6 @@ import { amber, blue, blueGrey, brown, cyan, deepOrange, deepPurple, green, grey
 
 export const CLASSIFICATION_TAGS = [
     {
-        id: 'ew',
         name: "Extremely wet",
         max: null,
         min: 4,
@@ -11,7 +10,6 @@ export const CLASSIFICATION_TAGS = [
         tag: 5
     },
     {
-        id: 'vw',
         name: "Very wet",
         max: 3.99,
         min: 3,
@@ -19,7 +17,6 @@ export const CLASSIFICATION_TAGS = [
         tag: 4
     },
     {
-        id: 'mw',
         name: "Moderately wet",
         max: 2.99,
         min: 2,
@@ -27,7 +24,6 @@ export const CLASSIFICATION_TAGS = [
         tag: 3
     },
     {
-        id: 'sw',
         name: "Slightly wet",
         max: 1.99,
         min: 1,
@@ -35,7 +31,6 @@ export const CLASSIFICATION_TAGS = [
         tag: 2
     },
     {
-        id: 'iws',
         name: "Incipient wet spell",
         max: 0.99,
         min: 0.50,
@@ -43,7 +38,6 @@ export const CLASSIFICATION_TAGS = [
         tag: 1
     },
     {
-        id: 'nn',
         name: "Near normal",
         max: 0.49,
         min: -0.49,
@@ -51,7 +45,6 @@ export const CLASSIFICATION_TAGS = [
         tag: 0
     },
     {
-        id: 'id',
         name: "Incipient drought",
         max: -0.50,
         min: -0.99,
@@ -59,7 +52,6 @@ export const CLASSIFICATION_TAGS = [
         tag: -1
     },
     {
-        id: 'mid',
         name: "Mild drought",
         max: 1,
         min: -1.99,
@@ -67,7 +59,6 @@ export const CLASSIFICATION_TAGS = [
         tag: -2
     },
     {
-        id: 'mod',
         name: "Moderate drought",
         max: -2,
         min: -2.99,
@@ -75,7 +66,6 @@ export const CLASSIFICATION_TAGS = [
         tag: -3
     },
     {
-        id: 'sd',
         name: "Severe drought",
         max: -3,
         min: -3.99,
@@ -83,7 +73,6 @@ export const CLASSIFICATION_TAGS = [
         tag: -4
     },
     {
-        id: 'ed',
         name: "Extreme drought",
         max: -4,
         min: null,
