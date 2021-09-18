@@ -1,57 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
+import React, { useEffect } from 'react';
 import './App.css';
+import { ThemeProvider } from '@material-ui/core';
+import theme from './app/config/theme'
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+
+// Pages
+import HomePage from './features/pages/HomePage';
+
+// Routes
+import PublicRoute from './features/routes/PublicRoute';
+
+// Layouts
+import MainLayout from './features/layouts/MainLayout';
+
+// Services
+import { ROUTE__HOME } from './app/constants/routes';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="app">
+        <Router>
+          <Switch>
+            <PublicRoute
+              exact
+              path={ROUTE__HOME}
+              component={HomePage}
+              layout={MainLayout}
+            />
+          </Switch>
+        </Router>
+      </div>
+    </ThemeProvider>
   );
 }
 
