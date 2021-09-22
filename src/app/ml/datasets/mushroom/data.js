@@ -17,7 +17,7 @@ export const CLASSIFICATION_TAGS = [
 export const COLUMNS = [
     {
         id: 'capShape',
-        label: 'capShape',
+        label: 'Cap Shape',
         minWidth: 20,
         align: 'center',
         type: "string",
@@ -33,7 +33,7 @@ export const COLUMNS = [
     },
     {
         id: 'capSurface',
-        label: 'capSurface',
+        label: 'Cap Surface',
         minWidth: 20,
         align: 'center',
         type: "string",
@@ -47,7 +47,7 @@ export const COLUMNS = [
     },
     {
         id: 'capColor',
-        label: 'capColor',
+        label: 'Cap Color',
         minWidth: 20,
         align: 'center',
         type: "string",
@@ -67,7 +67,7 @@ export const COLUMNS = [
     },
     {
         id: 'bruises',
-        label: 'bruises',
+        label: 'Bruises',
         minWidth: 20,
         align: 'center',
         type: "string",
@@ -79,7 +79,7 @@ export const COLUMNS = [
     },
     {
         id: 'odor',
-        label: 'odor',
+        label: 'Odor',
         minWidth: 20,
         align: 'center',
         type: "string",
@@ -98,7 +98,7 @@ export const COLUMNS = [
     },
     {
         id: 'gillAttachment',
-        label: 'gillAttachment',
+        label: 'Gill Attachment',
         minWidth: 20,
         align: 'center',
         type: "string",
@@ -112,7 +112,7 @@ export const COLUMNS = [
     },
     {
         id: 'gillSpacing',
-        label: 'gillSpacing',
+        label: 'Gill Spacing',
         minWidth: 20,
         align: 'center',
         type: "string",
@@ -125,7 +125,7 @@ export const COLUMNS = [
     },
     {
         id: 'gillSize',
-        label: 'gillSize',
+        label: 'Gill Size',
         minWidth: 20,
         align: 'center',
         type: "string",
@@ -137,7 +137,7 @@ export const COLUMNS = [
     },
     {
         id: 'gillColor',
-        label: 'gillColor',
+        label: 'Gill Color',
         minWidth: 20,
         align: 'center',
         type: "string",
@@ -159,7 +159,7 @@ export const COLUMNS = [
     },
     {
         id: 'stalkShape',
-        label: 'stalkShape',
+        label: 'Stalk Shape',
         minWidth: 20,
         align: 'center',
         type: "string",
@@ -171,7 +171,7 @@ export const COLUMNS = [
     },
     {
         id: 'stalkRoot',
-        label: 'stalkRoot',
+        label: 'Stalk Root',
         minWidth: 20,
         align: 'center',
         type: "string",
@@ -188,7 +188,7 @@ export const COLUMNS = [
     },
     {
         id: 'stalkSurfaceAboveRing',
-        label: 'stalkSurfaceAboveRing',
+        label: 'Stalk Surface Above Ring',
         minWidth: 20,
         align: 'center',
         type: "string",
@@ -202,7 +202,7 @@ export const COLUMNS = [
     },
     {
         id: 'stalkSurfaceBelowRing',
-        label: 'stalkSurfaceBelowRing',
+        label: 'Stalk Surface Below Ring',
         minWidth: 20,
         align: 'center',
         type: "string",
@@ -216,7 +216,7 @@ export const COLUMNS = [
     },
     {
         id: 'stalkColorAboveRing',
-        label: 'stalkColorAboveRing',
+        label: 'Stalk Color Above Ring',
         minWidth: 20,
         align: 'center',
         type: "string",
@@ -235,7 +235,7 @@ export const COLUMNS = [
     },
     {
         id: 'stalkColorBelowRing',
-        label: 'stalkColorBelowRing',
+        label: 'Stalk Color Below Ring',
         minWidth: 20,
         align: 'center',
         type: "string",
@@ -254,7 +254,7 @@ export const COLUMNS = [
     },
     {
         id: 'veilType',
-        label: 'veilType',
+        label: 'Veil Type',
         minWidth: 20,
         align: 'center',
         type: "string",
@@ -266,7 +266,7 @@ export const COLUMNS = [
     },
     {
         id: 'veilColor',
-        label: 'veilColor',
+        label: 'Veil Color',
         minWidth: 20,
         align: 'center',
         type: "string",
@@ -280,7 +280,7 @@ export const COLUMNS = [
     },
     {
         id: 'ringNumber',
-        label: 'ringNumber',
+        label: 'Ring Number',
         minWidth: 20,
         align: 'center',
         type: "string",
@@ -293,7 +293,7 @@ export const COLUMNS = [
     },
     {
         id: 'ringType',
-        label: 'ringType',
+        label: 'Ring Type',
         minWidth: 20,
         align: 'center',
         type: "string",
@@ -311,7 +311,7 @@ export const COLUMNS = [
     },
     {
         id: 'sporePrintColor',
-        label: 'sporePrintColor',
+        label: 'Spore Print Color',
         minWidth: 20,
         align: 'center',
         type: "string",
@@ -330,7 +330,7 @@ export const COLUMNS = [
     },
     {
         id: 'population',
-        label: 'population',
+        label: 'Population',
         minWidth: 20,
         align: 'center',
         type: "string",
@@ -346,7 +346,7 @@ export const COLUMNS = [
     },
     {
         id: 'habitat',
-        label: 'habitat',
+        label: 'Habitat',
         minWidth: 20,
         align: 'center',
         type: "string",
