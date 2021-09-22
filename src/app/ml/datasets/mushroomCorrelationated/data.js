@@ -377,7 +377,7 @@ export const COLUMNS = [
 
 export const TRAINING_DATA = trainingData.sort(() => Math.random() - Math.random()).slice(0, 150);
 
-export const INPUT__TRAINING_DATA_MAP = trainingData.map(item => [
+export const INPUT__TRAINING_DATA_MAP = TRAINING_DATA.map(item => [
     item.stalkColorBelowRing,
     item.ringType,
     item.sporePrintColor,
@@ -397,7 +397,7 @@ export function INPUT__TESTING_DATA_MAP(testingData) {
     return map;
 }
 
-export const OUTPUT__TRAINING_DATA_MAP = trainingData.map(item => [
+export const OUTPUT__TRAINING_DATA_MAP = TRAINING_DATA.map(item => [
     item.tag === "0" ? 1 : 0,
     item.tag === "1" ? 1 : 0,
 ])

@@ -113,9 +113,9 @@ export const COLUMNS = [
     },
 ];
 
-export const TRAINING_DATA = trainingData;
+export const TRAINING_DATA = trainingData.sort(() => Math.random() - Math.random()).slice(0, 150);;
 
-export const INPUT__TRAINING_DATA_MAP = trainingData.map(item => [
+export const INPUT__TRAINING_DATA_MAP = TRAINING_DATA.map(item => [
     item.month,
     item.temperatureC,
     item.precipitation,
@@ -133,7 +133,7 @@ export function INPUT__TESTING_DATA_MAP(testingData) {
     return map;
 }
 
-export const OUTPUT__TRAINING_DATA_MAP = trainingData.map(item => [
+export const OUTPUT__TRAINING_DATA_MAP = TRAINING_DATA.map(item => [
     item.tag === "4" ? 1 : 0,
     item.tag === "3" ? 1 : 0,
     item.tag === "2" ? 1 : 0,
