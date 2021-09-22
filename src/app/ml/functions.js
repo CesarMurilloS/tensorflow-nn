@@ -1,11 +1,12 @@
 import * as tf from '@tensorflow/tfjs';
 
 // Input datasets
-import trainingSet from "./trainingSet.json"
-import testingSet from "./testingSet.json"
+import { CLASSIFICATION_TAGS } from './datasets/weather/data';
+import { SELECT__POSITION } from '../services/datasetSlice';
+import { DATASETS } from '../constants/constants';
+import { useSelector } from 'react-redux';
 
 // Output tags
-import { CLASSIFICATION_TAGS } from "../constants/constants"
 
 export const getDataPromise = (num) => new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -13,48 +14,29 @@ export const getDataPromise = (num) => new Promise((resolve, reject) => {
     }, 2000);
 });
 
-export const ConvolutionalNeuralNetwork = () => new Promise((resolve, reject) => {
+export const NeuralNetwork = (request) => new Promise((resolve, reject) => {
     console.log("Neural Network calculating tags...")
+    
+    let dataset = DATASETS[request.datasetPosition];
 
     /**
      * Input: Training data
      */
-    const trainingData = tf.tensor2d(
-        trainingSet.map(item => [
-            item.month,
-            item.temperatureC,
-            item.precipitation,
-            item.evapotranspiration,
-        ]))
+    const trainingData = tf.tensor2d(dataset.inputTrainingDataMap)
+    console.log("Training Data: ", trainingData)
 
     /**
      * Input: Testing data
      * */
-    const testingData = tf.tensor2d(
-        testingSet.map(item => [
-            item.month,
-            item.temperatureC,
-            item.precipitation,
-            item.evapotranspiration,
-        ]))
+    console.log("Request.testingData: ", request.inputTestingDataMap)
+    const testingData = tf.tensor2d(request.inputTestingDataMap)
+    console.log("Testing Data: ", testingData)
 
     /**
      * Output: Probability for each tag
      * */
-    const outputData = tf.tensor2d(
-        trainingSet.map(item => [
-            item.tag === "-5" ? 1 : 0,
-            item.tag === "-4" ? 1 : 0,
-            item.tag === "-3" ? 1 : 0,
-            item.tag === "-2" ? 1 : 0,
-            item.tag === "-1" ? 1 : 0,
-            item.tag === "0" ? 1 : 0,
-            item.tag === "1" ? 1 : 0,
-            item.tag === "2" ? 1 : 0,
-            item.tag === "3" ? 1 : 0,
-            item.tag === "4" ? 1 : 0,
-            item.tag === "5" ? 1 : 0
-        ]))
+    const outputData = tf.tensor2d(dataset.outputTrainingDataMap)
+    console.log("Output Data: ", outputData)
 
     /**
      * Build Neural Network
@@ -72,8 +54,8 @@ export const ConvolutionalNeuralNetwork = () => new Promise((resolve, reject) =>
      * References: 
      * 1. https://machinelearningmastery.com/a-gentle-introduction-to-sigmoid-function/
      */
-      model.add(tf.layers.dense({
-        inputShape: [4],
+    model.add(tf.layers.dense({
+        inputShape: [testingData.strides[0]],
         activation: "sigmoid",
         units: 5,
     }))
@@ -85,11 +67,7 @@ export const ConvolutionalNeuralNetwork = () => new Promise((resolve, reject) =>
     model.add(tf.layers.dense({
         inputShape: [6],
         activation: "sigmoid",
-        units: 11,
-    }))
-    model.add(tf.layers.dense({
-        activation: "sigmoid",
-        units: 11,
+        units: outputData.strides[0],
     }))
     model.compile({
         loss: "meanSquaredError",
@@ -129,13 +107,11 @@ export const ConvolutionalNeuralNetwork = () => new Promise((resolve, reject) =>
             }
 
             console.log(
-                "Classification: ", CLASSIFICATION_TAGS[max],
+                "Classification: ", dataset.classificationTags[max],
                 " Fitness: ", values[max], "%")
 
+            // Success in classification values
             resolve({ selectedProbability: max, model: arr })
-            /*setSelectedProbability(max)
-            setModel(arr)*/
-
         })
         .catch((error) => {
             // Error

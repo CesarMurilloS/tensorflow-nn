@@ -1,32 +1,36 @@
 import { combineReducers, createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-    dataset: null,
-    trainingData: null,
-    testingData: null
+    position: 0,
+    neuralNetworkStarted: false,
+    newRecord: null,
 }
 
 const datasetSlice = createSlice({
     name: 'dataset',
     initialState,
     reducers: {
-        SET__DATASET: (state, action) => {
-            state.dataset = action.payload.dataset
+        SET__POSITION: (state, action) => {
+            state.position = action.payload.position
         },
-        SET__TRAINING_DATA: (state, action) => {
-            state.trainingData = action.payload.trainingData
+        SET__NEURAL_NETWORK_STARTED: (state, action) => {
+            state.neuralNetworkStarted = action.payload.neuralNetworkStarted
         },
-        SET__TESTING_DATA: (state, action) => {
-            state.testingData = action.payload.testingData
-        }        
+        SET__NEW_RECORD: (state, action) => {
+            state.newRecord = action.payload.newRecord
+        },
     }
 });
 
-export const { SET__TRAINING_DATA, SET__TESTING_DATA } = datasetSlice.actions
+export const {
+    SET__POSITION,
+    SET__NEURAL_NETWORK_STARTED,
+    SET__NEW_RECORD,
+} = datasetSlice.actions
 
-export const SELECT__DATASET = (state) => state.auth.dataset
-export const SELECT__TRAINING_DATA = (state) => state.auth.trainingData
-export const SELECT__TESTING_DATA = (state) => state.auth.testingData
+export const SELECT__POSITION = (state) => state.data.dataset.position
+export const SELECT__NEURAL_NETWORK_STARTED = (state) => state.data.dataset.neuralNetworkStarted
+export const SELECT__NEW_RECORD = (state) => state.data.dataset.newRecord
 
 // Reducer combiner
 const reducer = combineReducers({

@@ -1,0 +1,316 @@
+[{
+        "month": 5,
+        "temperatureC": 24.274193548387093,
+        "precipitation": 2,
+        "evapotranspiration": 127.34459927388286,
+        "tag": "-4"
+    },
+    {
+        "month": 5,
+        "temperatureC": 24.85483870967742,
+        "precipitation": 0,
+        "evapotranspiration": 132.1907389789278,
+        "tag": "-4"
+    },
+    {
+        "month": 5,
+        "temperatureC": 25.758064516129032,
+        "precipitation": 0,
+        "evapotranspiration": 139.8603557976487,
+        "tag": "-4"
+    },
+    {
+        "month": 5,
+        "temperatureC": 25.604838709677416,
+        "precipitation": 1,
+        "evapotranspiration": 138.5480956919858,
+        "tag": "-4"
+    },
+    {
+        "month": 5,
+        "temperatureC": 25,
+        "precipitation": 7,
+        "evapotranspiration": 133.41262960649323,
+        "tag": "-4"
+    },
+    {
+        "month": 11,
+        "temperatureC": 19.883333333333333,
+        "precipitation": 0,
+        "evapotranspiration": 79.69421406411666,
+        "tag": "-3"
+    },
+    {
+        "month": 3,
+        "temperatureC": 19.86290322580645,
+        "precipitation": 0,
+        "evapotranspiration": 85.09265527232236,
+        "tag": "-3"
+    },
+    {
+        "month": 3,
+        "temperatureC": 19.86290322580645,
+        "precipitation": 0,
+        "evapotranspiration": 85.09265527232236,
+        "tag": "-3"
+    },
+    {
+        "month": 4,
+        "temperatureC": 23.70833333333333,
+        "precipitation": 0,
+        "evapotranspiration": 118.25853162061044,
+        "tag": "-3"
+    },
+    {
+        "month": 3,
+        "temperatureC": 21.758064516129032,
+        "precipitation": 0,
+        "evapotranspiration": 98.27081972455059,
+        "tag": "-3"
+    },
+    {
+        "month": 5,
+        "temperatureC": 24.653225806451612,
+        "precipitation": 54.4,
+        "evapotranspiration": 130.50052573186528,
+        "tag": "-2"
+    },
+    {
+        "month": 6,
+        "temperatureC": 23.38333333333333,
+        "precipitation": 296.9,
+        "evapotranspiration": 122.19079150430213,
+        "tag": "2"
+    },
+    {
+        "month": 11,
+        "temperatureC": 19.25,
+        "precipitation": 9.5,
+        "evapotranspiration": 75.72066616782055,
+        "tag": "-2"
+    },
+    {
+        "month": 12,
+        "temperatureC": 18.266129032258068,
+        "precipitation": 0.6,
+        "evapotranspiration": 68.3458608418644,
+        "tag": "-2"
+    },
+    {
+        "month": 1,
+        "temperatureC": 18.11290322580645,
+        "precipitation": 4,
+        "evapotranspiration": 68.00724463325162,
+        "tag": "-2"
+    },
+    {
+        "month": 6,
+        "temperatureC": 24.10833333333333,
+        "precipitation": 111.2,
+        "evapotranspiration": 128.23025024162172,
+        "tag": "-1"
+    },
+    {
+        "month": 5,
+        "temperatureC": 24.072580645161292,
+        "precipitation": 94.1,
+        "evapotranspiration": 125.67749567784048,
+        "tag": "-1"
+    },
+    {
+        "month": 6,
+        "temperatureC": 24.80833333333333,
+        "precipitation": 129.7,
+        "evapotranspiration": 134.16230877968914,
+        "tag": "-1"
+    },
+    {
+        "month": 10,
+        "temperatureC": 20.637096774193548,
+        "precipitation": 60,
+        "evapotranspiration": 88.14260020775593,
+        "tag": "-1"
+    },
+    {
+        "month": 10,
+        "temperatureC": 20.637096774193548,
+        "precipitation": 60,
+        "evapotranspiration": 88.14260020775593,
+        "tag": "-1"
+    },
+    {
+        "month": 8,
+        "temperatureC": 22.45967741935484,
+        "precipitation": 171.1,
+        "evapotranspiration": 110.73484506900014,
+        "tag": "0"
+    },
+    {
+        "month": 9,
+        "temperatureC": 22.85833333333333,
+        "precipitation": 186.3,
+        "evapotranspiration": 108.80356763076956,
+        "tag": "0"
+    },
+    {
+        "month": 8,
+        "temperatureC": 21.66935483870968,
+        "precipitation": 166.7,
+        "evapotranspiration": 104.64136594059386,
+        "tag": "0"
+    },
+    {
+        "month": 6,
+        "temperatureC": 23.898709005371565,
+        "precipitation": 187.90649350649352,
+        "evapotranspiration": 126.56740045202986,
+        "tag": "0"
+    },
+    {
+        "month": 9,
+        "temperatureC": 21.914155227148342,
+        "precipitation": 165.64,
+        "evapotranspiration": 101.83047368995096,
+        "tag": "0"
+    },
+    {
+        "month": 8,
+        "temperatureC": 22.274193548387093,
+        "precipitation": 235.8,
+        "evapotranspiration": 109.29338888490987,
+        "tag": "1"
+    },
+    {
+        "month": 7,
+        "temperatureC": 21.693548387096772,
+        "precipitation": 249.3,
+        "evapotranspiration": 107.88965141910342,
+        "tag": "1"
+    },
+    {
+        "month": 7,
+        "temperatureC": 20.838709677419352,
+        "precipitation": 211.5,
+        "evapotranspiration": 101.24960841883278,
+        "tag": "1"
+    },
+    {
+        "month": 8,
+        "temperatureC": 21.312903225806448,
+        "precipitation": 223.2,
+        "evapotranspiration": 101.93470682738943,
+        "tag": "1"
+    },
+    {
+        "month": 7,
+        "temperatureC": 21.548387096774192,
+        "precipitation": 215.4,
+        "evapotranspiration": 106.7512046392888,
+        "tag": "1"
+    },
+    {
+        "month": 6,
+        "temperatureC": 22.475,
+        "precipitation": 286.1,
+        "evapotranspiration": 114.77620474651441,
+        "tag": "2"
+    },
+    {
+        "month": 8,
+        "temperatureC": 21.508064516129032,
+        "precipitation": 277.5,
+        "evapotranspiration": 103.4134083190087,
+        "tag": "2"
+    },
+    {
+        "month": 1,
+        "temperatureC": 15.72258064516129,
+        "precipitation": 238.9,
+        "evapotranspiration": 54.3803109947335,
+        "tag": "2"
+    },
+    {
+        "month": 8,
+        "temperatureC": 21.322580645161292,
+        "precipitation": 286.49999999999994,
+        "evapotranspiration": 102.00784654730724,
+        "tag": "2"
+    },
+    {
+        "month": 8,
+        "temperatureC": 21.838709677419356,
+        "precipitation": 271.3,
+        "evapotranspiration": 105.9364389269334,
+        "tag": "2"
+    },
+    {
+        "month": 7,
+        "temperatureC": 22.766129032258068,
+        "precipitation": 355.69999999999993,
+        "evapotranspiration": 116.43790290281356,
+        "tag": "3"
+    },
+    {
+        "month": 9,
+        "temperatureC": 21.9,
+        "precipitation": 342.4000000000001,
+        "evapotranspiration": 101.6844233613426,
+        "tag": "3"
+    },
+    {
+        "month": 8,
+        "temperatureC": 22.016129032258068,
+        "precipitation": 315,
+        "evapotranspiration": 107.29944348044516,
+        "tag": "3"
+    },
+    {
+        "month": 7,
+        "temperatureC": 21.766129032258068,
+        "precipitation": 344.6,
+        "evapotranspiration": 108.46053569832655,
+        "tag": "3"
+    },
+    {
+        "month": 8,
+        "temperatureC": 21.91935483870968,
+        "precipitation": 317.9000000000001,
+        "evapotranspiration": 106.5551934613346,
+        "tag": "3"
+    },
+    {
+        "month": 7,
+        "temperatureC": 21.653225806451612,
+        "precipitation": 374.8,
+        "evapotranspiration": 107.57297160752884,
+        "tag": "4"
+    },
+    {
+        "month": 7,
+        "temperatureC": 22.29032258064516,
+        "precipitation": 362,
+        "evapotranspiration": 112.61630885674013,
+        "tag": "4"
+    },
+    {
+        "month": 7,
+        "temperatureC": 22.693548387096772,
+        "precipitation": 408,
+        "evapotranspiration": 115.85192505049143,
+        "tag": "4"
+    },
+    {
+        "month": 7,
+        "temperatureC": 22.064516129032253,
+        "precipitation": 370.7000000000001,
+        "evapotranspiration": 110.81909891945757,
+        "tag": "4"
+    },
+    {
+        "month": 7,
+        "temperatureC": 21.95967741935484,
+        "precipitation": 379.6,
+        "evapotranspiration": 109.98829272871927,
+        "tag": "4"
+    }
+]
